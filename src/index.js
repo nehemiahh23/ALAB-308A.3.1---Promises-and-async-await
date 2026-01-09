@@ -8,13 +8,11 @@ async function getUserData(id) {
     db3: db3
   };
 
-  let val = central(id)
-  val = await val.toString()
-  const val1 = await db1(id)
+  let val = await central(id)
   
   //   console.log(val)
   //   console.log(val1)
-  return typeof val
+  return dbs[val](id)
 }
 
-console.log(await getUserData(1))
+console.log(await getUserData(2))
