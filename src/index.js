@@ -8,3 +8,5 @@ function getUserData(id) {
     db3: db3
   };
 }
+
+console.log(central(2))
