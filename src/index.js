@@ -9,12 +9,12 @@ async function getUserData(id) {
   };
 
   let val = central(id)
-  val = val.toString()
+  val = await val.toString()
   const val1 = await db1(id)
   
   //   console.log(val)
   //   console.log(val1)
-  return val
+  return typeof val
 }
 
 console.log(await getUserData(1))
